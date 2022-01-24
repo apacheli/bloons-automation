@@ -1,6 +1,6 @@
 from pyautogui import position, sleep
 
-seconds = 6
+seconds = 5
 
 print(f"Displaying position in {seconds} seconds")
 
