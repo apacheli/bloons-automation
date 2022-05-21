@@ -199,7 +199,7 @@ def play_game():
     c(1057, 812, .5)
     c(1120, 706, .5)
     c(1598, 501, .5)
-    s(2, .5)
+    s(2, 1)
 
     # caution sleep in case something goes wrong
     sleep(2)
