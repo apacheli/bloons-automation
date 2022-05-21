@@ -1,11 +1,11 @@
-points = 797, 454
-
 from pyautogui import position, sleep, moveTo
 
-seconds = 3
+points = 797, 454
 
-print(f"Moving your position to {points} in {seconds} seconds")
+seconds = 5
+
+print(f"Moving the position of your cursor to {points} in {seconds} seconds")
 
 sleep(seconds)
 
-print(moveTo(points[0], points[1]))
+moveTo(points[0], points[1])
