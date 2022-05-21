@@ -192,13 +192,13 @@ def play_game():
 
     # restart the map after completion because it is faster
     wait_for_image("victory")
-    c(973, 861, .25)
+    c(973, 861, .5)
     c(1182, 800, .5)
     c(952, 733, .5)
     c(1495, 133, .5)
     c(1057, 812, .5)
     c(1120, 706, .5)
-    c(1598, 501, .5)
+    c(1598, 501, .5, move=True)
     s(2, 1)
 
     # caution sleep in case something goes wrong
