@@ -21,37 +21,39 @@ A Python script I wrote to help me grind collection events in Bloons TD 6.
 
 ## Running
 
-- Install Python 3 or higher - https://www.python.org/
+- Install Python 3 or higher: https://www.python.org/
 - Install pyautogui - `$ py -m pip install pyautogui` (This may vary depending
   on your OS, but you can just google "how to install python modules")
-- Open Bloons TD 6 and then go to Dark Castle on easy difficulty
+- Open Bloons TD 6 and stay on the home screen
 - Clone the repository with git:
   `$ git clone https://github.com/apacheli/bloons-automation`
-- Run the script - `$ py main.py`
+- Run the script: `$ py main.py`
 
 For convenience, make sure your level is high so you can keep it running
-overnight. I did not add checks for level up screens.
+overnight. I did not add checks for level up screens. (I'm level 14 prestige not
+to flex or anything)
 
 ## FAQ
 
-### Why not use hotkeys?
+### Q: Why not use hotkeys?
 
-Hotkeys used to work at some point, but Ninja Kiwi might have added some sort of
-patch to disable automated key presses from pyautogui.
+**A:** Hotkeys used to work at some point, but Ninja Kiwi might have added some
+sort of patch to disable automated key presses from pyautogui.
 
-### Will this work on my mobile device?
+### Q: Will this work on my mobile device?
 
-No.
+**A:** No.
 
-### Does this script work on Linux and macOS?
+### Q: Does this script work on Linux and macOS?
 
-Try it and see.
+**A:** Try it and see.
 
-### Why does it not work?
+### Q: Why does it not work?
 
-This usually happens after an update.
+**A:** This usually happens after an update. You might have to update the
+assets.
 
-### Why not restart after completion?
+### Q: Why not restart after completion?
 
-Ninja Kiwi must have patched this quirk. Unfortunately, you are unable to save
-up for diamond crates.
+**A:** Ninja Kiwi must have patched this quirk. Unfortunately, you are unable to
+save up for diamond crates.
