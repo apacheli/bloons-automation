@@ -2,7 +2,7 @@
 
 ## About
 
-> Disclaimer: This is a personal project intended for educational purposes only.
+> **Warning** This is a personal project intended for educational purposes only.
 > I am not responsible if anything goes wrong on your end. However, feel free to
 > modify the script for your own use.
 
@@ -14,11 +14,10 @@ A Python script I wrote to help me grind collection events in Bloons TD 6.
 - Have Benjamin unlocked
 - Have all monkey knowledge unlocked and enabled
 - Have Dark Castle unlocked
-- Screen size set to 1600 x 900
+- Screen size set to 1600 x 900 (your screen must be 16:9 ratio too)
 
-This script will probably not work for you if you do not meet these
-requirements. However, feel free to modify the script for your own use as the
-disclaimer says.
+> **Note** This script will probably not work for you if you do not meet these
+> requirements.
 
 ## Running
 
@@ -26,12 +25,9 @@ disclaimer says.
 - Install pyautogui - `$ py -m pip install pyautogui` (This may vary depending
   on your OS, but you can just google "how to install python modules")
 - Open Bloons TD 6 and then go to Dark Castle on easy difficulty
-- Copy `main.py`
+- Clone the repository with git:
+  `$ git clone https://github.com/apacheli/bloons-automation`
 - Run the script - `$ py main.py`
-
-You may have noticed that instead of leaving the game after completion, the game
-will just restart. If you want to increase your diamond crate efficiency, do not
-close or leave the game.
 
 For convenience, make sure your level is high so you can keep it running
 overnight. I did not add checks for level up screens.
@@ -50,3 +46,12 @@ No.
 ### Does this script work on Linux and macOS?
 
 Try it and see.
+
+### Why does it not work?
+
+This usually happens after an update.
+
+### Why not restart after completion?
+
+Ninja Kiwi must have patched this quirk. Unfortunately, you are unable to save
+up for diamond crates.

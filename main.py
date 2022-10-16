@@ -2,6 +2,18 @@ from pyautogui import click, locateOnScreen, moveTo, scroll, sleep
 from time import time
 
 
+insta_locations = [
+  # Double instas
+  [834, 549],
+  [1092, 556],
+
+  # Triple instas
+  [709, 558],
+  [963, 551],
+  [1218, 555],
+]
+
+
 def c(x: int = None, y: int = None, seconds: int = None, clicks=1, move=False):
     if move:
         moveTo(x, y)
@@ -27,6 +39,25 @@ def wait_for_image(image: str):
         pass
 
 
+def collection_event():
+    sleep(5)
+    if not locateOnScreen("./assets/collect.png"):
+        return
+    c(974, 670, 1)
+    for l in insta_locations:
+        c(l[0], l[1], .5, clicks=2)
+    c(231, 155, .5)
+
+
+def go_to_dark_castle():
+    c(866, 876, .25)
+    c(1277, 907, .25)
+    c(1532, 462, .25)
+    c(967, 321, .25)
+    c(688, 449, .25)
+    c(694, 582, .25)
+
+
 path_1_left = [440, 510]
 path_1_right = [1451, 505]
 
@@ -45,168 +76,58 @@ def play_game():
 
     # place benjamin on round 2
     wait_for_image("2")
-    c(1581, 297, .1)
-    c(1457, 696, .1)
+    c(1581, 297, .15)
+    c(1457, 696, .15)
 
-    # place a boomerang monkey on round 3
-    wait_for_image("3")
-    c(1597, 399, .1)
-    c(822, 657, .1)
-
-    # place a tack shooter on round 4
+    # buy monkey ace
     wait_for_image("4")
-    c(1590, 503, .1)
-    c(632, 504, .1)
+    c(1576, 852, .15)
+    c(985, 716, .15)
 
-    # place a sniper and a glue gunner on round 5
-    wait_for_image("5")
-    c(1681, 628, .1)
-    c(1373, 513, .1)
-    c(1593, 631, .1)
-    c(1012, 661, .1)
-
-    # place an engineer on round 6
-    wait_for_image("6")
-    c(1587, 879, .1, move=True)
-    s(12, -1)
-    c(seconds=.1)
-    c(923, 472, .1)
-    c(1587, 879, .1, move=True)
-    s(12, 1)
-
-    # place an ice monkey on round 8
+    # buy heli pilot
     wait_for_image("8")
-    c(1673, 477, .1)
-    c(988, 476, .1)
+    c(1687, 802, .15)
+    c(768, 401, .15)
+    c(876, 562, .15, move=True)
 
-    # place a ninja on round 9
-    wait_for_image("9")
-    c(1587, 879, .1, move=True)
-    s(6, -1)
-    c(seconds=.1)
-    c(624, 615, .1)
-
-    # place a super monkey on round 14
+    # upgrade heli pilot to 2xx
     wait_for_image("14")
-    c(1680, 762, .1)
-    c(797, 454, .1)
-
-    # upgrade ninja
-    wait_for_image("24")
-    c(624, 615, .1)
-    c(path_2_right[0], path_2_right[1], .1, 3)
-    c(path_3_right[0], path_3_right[1], .1)
-
-    random_click()
-
-    # place a bomb shooter and upgrade to moab mauler
-    wait_for_image("28")
-    c(1684, 234, .1, move=True)
-    s(2, 1)
-    c(seconds=.1)
-    c(599, 459, .1, 2)
-    c(path_3_right[0], path_3_right[1], .1, 3)
+    c(768, 401, .15)
     c(path_1_right[0], path_1_right[1], .1, 2)
-
     random_click()
 
-    # sell the super monkey on round 28 (stealing too much xp)
-    c(797, 454, .1)
-    c(1449, 855, .1)
-
+    # upgrade heli pilot and monkey ace
+    # heli
+    wait_for_image("24")
+    c(768, 401, .15)
+    c(path_1_right[0], path_1_right[1], .1, 1)
+    c(path_2_right[0], path_2_right[1], .1, 2)
     random_click()
-
-    # upgrade engineer
-    c(923, 472, .1)
+    # ace
+    c(985, 716, .15)
     c(path_1_left[0], path_1_left[1], .1, 2)
     c(path_2_left[0], path_2_left[1], .1, 3)
-
     random_click()
 
-    # upgrade some towers on round 34
+    # buy another ace
     wait_for_image("34")
-    c(797, 454, .1)
-    c(1449, 855, .1)
-
-    random_click()
-
-    def a():  # boomerang money
-        c(822, 657, .1)
-        c(path_1_right[0], path_1_right[1], .1, 3)
-        c(path_3_right[0], path_3_right[1], .1, 2)
-    a()
-
-    random_click()
-
-    def b():  # tack shooter
-        c(632, 504, .1)
-        c(path_2_right[0], path_2_right[1], .1, 3)
-        c(path_1_right[0], path_1_right[1], .1)
-        c(1582, 300, .1)
-        c(754, 657, .1, 2)
-        c(path_2_right[0], path_2_right[1], .1, 3)
-        c(path_1_right[0], path_1_right[1], .1)
-    b()
-
-    random_click()
-
-    def _c():  # dart monkey
-        c(898, 650, .1)
-        c(path_2_left[0], path_2_left[1], .1, 3)
-        c(path_3_left[0], path_3_left[1], .1, 2)
-        c(1684, 234, .1, move=True)
-        s(2, 1)
-        c(seconds=.1)
-        c(569, 713, .1, 2)
-        c(path_2_right[0], path_2_right[1], .1, 3)
-        c(path_3_right[0], path_3_right[1], .1, 2)
-    _c()
-
-    random_click()
-
-    # upgrade more towers on round 36
-    wait_for_image("36")
-
-    def d():  # glue gunner
-        c(1012, 661, .1)
-        c(path_1_left[0], path_1_left[1], .1)
-        c(path_2_left[0], path_2_left[1], .1, 2)
-    d()
-
-    random_click()
-
-    def e():  # ice monkey
-        c(988, 476, .1)
-        c(path_1_left[0], path_1_left[1], .1, 3)
-    e()
-
-    random_click()
-
-    # upgrade sniper on round 38
-    wait_for_image("38")
-    c(1373, 513, .1)
-    c(path_1_left[0], path_1_left[1], .1, 2)
-    c(path_2_left[0], path_2_left[1], .1, 2)
-
+    c(1576, 852, .15)
+    c(949, 447, .2, clicks=2)
+    c(path_1_left[0], path_1_left[1], .1, clicks=4)
+    c(path_2_left[0], path_2_left[1], .1, clicks=2)
     random_click()
 
     # restart the map after completion because it is faster
     wait_for_image("victory")
     c(973, 861, .5)
-    c(1182, 800, .5)
-    c(952, 733, .5)
-    c(1495, 133, .5)
-    c(1057, 812, .5)
-    c(1120, 706, .5)
-    c(1598, 501, .5, move=True)
-    s(2, 1)
+    c(747, 805, .5)
 
     # caution sleep in case something goes wrong
     sleep(2)
 
 
 if __name__ == "__main__":
-    seconds = 5
+    seconds = 3
 
     print(f"MAKE SURE THAT YOU ARE ON DARK CASTLE BEFORE STARTING")
     print(f"Starting in {seconds} seconds")
@@ -216,6 +137,9 @@ if __name__ == "__main__":
 
     try:
         while True:
+            collection_event()
+            go_to_dark_castle()
+            wait_for_image("castle")
             play_game()
     except KeyboardInterrupt:
         print("Exiting...")
