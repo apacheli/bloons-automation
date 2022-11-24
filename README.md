@@ -1,5 +1,7 @@
 # Bloons TD 6 Automation Script
 
+> **Note** Confirmed to be working as of `2022-11-24`.
+
 ## About
 
 > **Warning** This is a personal project intended for educational purposes only.
@@ -14,7 +16,7 @@ A Python script I wrote to help me grind collection events in Bloons TD 6.
 - Have Benjamin unlocked
 - Have all monkey knowledge unlocked and enabled
 - Have Dark Castle unlocked
-- Screen size set to 1600 x 900 (your screen must be 16:9 ratio too)
+- Screen size set to 1600x900 (16:9 ratio)
 
 > **Note** This script will probably not work for you if you do not meet these
 > requirements.
@@ -37,12 +39,11 @@ to flex or anything)
 
 ### Q: Why not use hotkeys?
 
-**A:** Hotkeys used to work at some point, but Ninja Kiwi might have added some
-sort of patch to disable automated key presses from pyautogui.
+**A:** Ninja Kiwi probably added some measures to block hotkeys.
 
 ### Q: Will this work on my mobile device?
 
-**A:** No.
+**A:**  Try it and see.
 
 ### Q: Does this script work on Linux and macOS?
 
@@ -53,7 +54,6 @@ sort of patch to disable automated key presses from pyautogui.
 **A:** This usually happens after an update. You might have to update the
 assets.
 
-### Q: Why not restart after completion?
+### Q: Why not restart after completing?
 
-**A:** Ninja Kiwi must have patched this quirk. Unfortunately, you are unable to
-save up for diamond crates.
+**A:** Ninja Kiwi probably patched this.
