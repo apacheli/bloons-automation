@@ -32,6 +32,7 @@ A Python script I wrote to help me grind collection events in Bloons TD 6.
 - Open Bloons TD 6 and stay on the home screen
 - Clone the repository with git:
   `$ git clone https://github.com/apacheli/bloons-automation`
+- Go to the cloned directory: `$ cd bloons-automation`
 - Run the script: `$ py main.py`
 
 For convenience, make sure your level is high so you can keep it running
