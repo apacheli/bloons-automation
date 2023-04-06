@@ -24,26 +24,28 @@ A Python script I wrote to help me grind collection events in Bloons TD 6.
 ## Running
 
 - Install Python 3 or higher: https://www.python.org/
-- Install pyautogui - `$ py -m pip install pyautogui` (This may vary depending
-  on your OS, but you can just google "how to install python modules")
+- Install pyautogui - `$ py -m pip install pyautogui` This may vary depending on
+  your OS, but you can just google "how to install python modules"
+- Upgrade pillow because pyautogui needs it
+  `$ py -m pip install pillow --upgrade` Again, this may vary depending on your
+  OS
 - Open Bloons TD 6 and stay on the home screen
 - Clone the repository with git:
   `$ git clone https://github.com/apacheli/bloons-automation`
 - Run the script: `$ py main.py`
 
 For convenience, make sure your level is high so you can keep it running
-overnight. I did not add checks for level up screens. (I'm level 14 prestige not
-to flex or anything)
+overnight. I did not add checks for level up screens.
 
 ## FAQ
 
 ### Q: Why not use hotkeys?
 
-**A:** Ninja Kiwi probably added some measures to block hotkeys.
+**A:** Ninja Kiwi probably patched this.
 
 ### Q: Will this work on my mobile device?
 
-**A:**  Try it and see.
+**A:** Try it and see.
 
 ### Q: Does this script work on Linux and macOS?
 

@@ -40,22 +40,22 @@ def wait_for_image(image: str):
 
 
 def collection_event():
-    sleep(5)
+    sleep(3)
     if not locateOnScreen("./assets/collect.png"):
         return
     c(974, 670, 1)
     for l in insta_locations:
-        c(l[0], l[1], .5, clicks=2)
-    c(231, 155, .5)
+        c(l[0], l[1], .4, clicks=2)
+    c(231, 155, .4)
 
 
 def go_to_dark_castle():
-    c(866, 876, .25)
-    c(1277, 907, .25)
-    c(1532, 462, .25)
-    c(967, 321, .25)
-    c(688, 449, .25)
-    c(694, 582, .25)
+    c(866, 876, .25) # play
+    c(1277, 907, .25) # expert
+    c(1532, 462, .25) # expert arrow right
+    c(1380, 332, .25) # dark castle
+    c(688, 449, .25) # easy
+    c(694, 582, .25) # standard
 
 
 path_1_left = [440, 510]
@@ -117,13 +117,12 @@ def play_game():
     c(path_2_left[0], path_2_left[1], .1, clicks=2)
     random_click()
 
-    # restart the map after completion because it is faster
-    wait_for_image("victory")
+    wait_for_image("next")
     c(973, 861, .5)
     c(747, 805, .5)
 
     # caution sleep in case something goes wrong
-    sleep(2)
+    sleep(1.5)
 
 
 if __name__ == "__main__":
