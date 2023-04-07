@@ -87,19 +87,19 @@ def play_game():
     # buy heli pilot
     wait_for_image("8")
     c(1687, 802, .15)
-    c(768, 401, .15)
+    c(812, 350, .15)
     c(876, 562, .15, move=True)
 
     # upgrade heli pilot to 2xx
     wait_for_image("14")
-    c(768, 401, .15)
+    c(812, 350, .15)
     c(path_1_right[0], path_1_right[1], .1, 2)
     random_click()
 
     # upgrade heli pilot and monkey ace
     # heli
     wait_for_image("24")
-    c(768, 401, .15)
+    c(812, 350, .15)
     c(path_1_right[0], path_1_right[1], .1, 1)
     c(path_2_right[0], path_2_right[1], .1, 2)
     random_click()
@@ -112,7 +112,7 @@ def play_game():
     # buy another ace
     wait_for_image("34")
     c(1576, 852, .15)
-    c(949, 447, .2, clicks=2)
+    c(984, 397, .2, clicks=2)
     c(path_1_left[0], path_1_left[1], .1, clicks=4)
     c(path_2_left[0], path_2_left[1], .1, clicks=2)
     random_click()
