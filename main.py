@@ -44,9 +44,10 @@ def collection_event():
     if not locateOnScreen("./assets/collect.png"):
         return
     c(974, 670, 1)
+    sleep(1)
     for l in insta_locations:
-        c(l[0], l[1], .4, clicks=2)
-    c(231, 155, .4)
+        c(l[0], l[1], .5, clicks=3)
+    c(231, 155, .5)
 
 
 def go_to_dark_castle():

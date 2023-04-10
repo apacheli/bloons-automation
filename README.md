@@ -1,6 +1,6 @@
 # Bloons TD 6 Automation Script
 
-> **Note** Confirmed to be working as of 2023-04-06 version 36.1.
+> **Note** Confirmed to be working as of 2023-04-10 version 36.1.
 
 ## About
 
