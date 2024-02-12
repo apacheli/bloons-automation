@@ -99,13 +99,18 @@ def play_the_game():
 
 
 def main():
-    print("starting in 5 seconds")
+    print("starting in 15 seconds")
+    print("click game window before the script starts")
     print("press ctrl+c to exit")
-    while True:
-        s(3)
-        check_if_collection_event_is_on_screen()
-        navigate_to_dark_castle()
-        play_the_game()
+    try:
+        s(12)
+        while True:
+            s(3)
+            check_if_collection_event_is_on_screen()
+            navigate_to_dark_castle()
+            play_the_game()
+    except KeyboardInterrupt:
+        print("exiting...")
 
 
 if __name__ == "__main__":

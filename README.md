@@ -1,6 +1,7 @@
 # Bloons TD 6 Automation Script
 
-> [!note] This script is working as of `2024-02-12` on version `41.1.7608`.
+> [!note]
+> This script is working as of `2024-02-12` on version `41.1.7608`.
 
 A Python script I wrote to help me grind collection events in Bloons TD 6. It is
 best to leave it running overnight or when you are at college (or school if you
@@ -24,6 +25,7 @@ Stuff you need unlocked:
 For the project:
 
 - Install Python if you do not have it -> https://www.python.org/
+  - I used version `3.12.2` but latest will probably work
 - Download and then extract it somewhere
   - Click `<> Code v` the green button on GitHub
   - Click `Download ZIP`
@@ -31,7 +33,8 @@ For the project:
   - Press shift+right-click -> `Open command window here` or whatever is most
     similar on Windows
 - Type `py -m pip install requirements.txt`
-- Type `py main.py` to run the main script
+- Go to Bloons TD 6 window, and go to home menu
+- Go back to your terminal, and type `py main.py`
   - Press `ctrl+c` to exit
 
 ### License
