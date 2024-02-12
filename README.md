@@ -11,7 +11,7 @@ are a baby).
 
 Stuff you need unlocked:
 
-- x-2-3 Dart Monkey
+- x-2-4 Dart Monkey
 - x-2-3 Bomb Shooter
 - 4-1-x Glue Gunner
 - Have Sauda unlocked
