@@ -3,14 +3,13 @@
 > [!note]
 > This script is working as of `2024-02-12` on version `41.1.7608`.
 
-A Python script I wrote to help me grind collection events in Bloons TD 6. It is
-best to leave it running overnight or when you are at college (or school if you
-are a baby).
+A Python script I wrote to help me grind collection events in Bloons TD 6.
 
 ### Requirements
 
 Stuff you need unlocked:
 
+- Disable your monkey knowledge
 - x-2-4 Dart Monkey
 - x-2-3 Bomb Shooter
 - 4-1-x Glue Gunner
@@ -24,18 +23,23 @@ Stuff you need unlocked:
 
 For the project:
 
-- Install Python if you do not have it -> https://www.python.org/
-  - I used version `3.12.2` but latest will probably work
-- Download and then extract it somewhere
-  - Click `<> Code v` the green button on GitHub
+- Install Python if you do not have it: https://www.python.org/
+  - I used version `3.12.2` but the latest version will probably work
+- Download the source code, and then extract it
+  - Click the green button that says "Code"
   - Click `Download ZIP`
-- Open cmd/powershell/terminal at project root
+- Open cmd/powershell/terminal at the root of the project
   - Press shift+right-click -> `Open command window here` or whatever is most
-    similar on Windows
-- Type `py -m pip install requirements.txt`
-- Go to Bloons TD 6 window, and go to home menu
+    similar
+- Type `py -m pip install -r requirements.txt` into the terminal and then press
+  enter
+- Go to the Bloons TD 6 window and then go to the home menu
 - Go back to your terminal, and type `py main.py`
-  - Press `ctrl+c` to exit
+  - Press `ctrl+c` to exit whenever if needed
+
+Please do not hesitate to
+[make an issue](https://github.com/apacheli/bloons-automation/issues) if you
+encounter any difficulties while setting this script up!
 
 ### License
 

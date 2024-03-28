@@ -94,7 +94,7 @@ def play_the_game():
     c(x=438, y=629)
 
     click_img("next")
-    print("yay we won")
+    # print("yay we won")
     c(x=761, y=805)
 
 
