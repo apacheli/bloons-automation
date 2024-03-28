@@ -1,7 +1,7 @@
 # Bloons TD 6 Automation Script
 
 > [!note]
-> This script is working as of `2024-02-12` on version `41.1.7608`.
+> This script is working as of `2024-03-28` on version `41.1.7608`.
 
 A Python script I wrote to help me grind collection events in Bloons TD 6.
 
@@ -17,6 +17,7 @@ Stuff you need unlocked:
 - Have Dark Castle unlocked
 - Set screen size to `1600 x 900` and turn off fullscreen
   - Reset position by turning on and off fullscreen if you need to
+  - You may also need to set your monitor's resolution to `1920 x 1080`
 
 > [!note]
 > Make sure your level is high because I did not add level checks.
@@ -24,10 +25,9 @@ Stuff you need unlocked:
 For the project:
 
 - Install Python if you do not have it: https://www.python.org/
-  - I used version `3.12.2` but the latest version will probably work
-- Download the source code, and then extract it
-  - Click the green button that says "Code"
-  - Click `Download ZIP`
+  - I use version `3.12.2` but the latest will probably work
+- Download the source code:
+  https://github.com/apacheli/bloons-automation/archive/refs/heads/master.zip
 - Open cmd/powershell/terminal at the root of the project
   - Press shift+right-click -> `Open command window here` or whatever is most
     similar
